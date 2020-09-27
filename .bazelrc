@@ -1,0 +1,14 @@
+# Bazel build options go here
+
+# compile with clang
+build --repo_env=CC=clang
+
+# compile for C++17
+build --cxxopt='-std=c++17'
+
+# more compiler checks
+build --cxxopt='-Wall'
+build --cxxopt='-Wpedantic'
+
+# warnings are errors
+build --cxxopt='-Werror'
