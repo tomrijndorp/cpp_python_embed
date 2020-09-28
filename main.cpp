@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     Py_SetProgramName(program);  /* optional but recommended */
     Py_Initialize();
     PyRun_SimpleString("from time import time,ctime\n"
-                       "print('Today is', ctime(time()))\n");
+                       "print('Python says: Today is', ctime(time()))\n");
     if (Py_FinalizeEx() < 0) {
         exit(120);
     }
